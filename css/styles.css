@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    background-color: #fff8cd;
+    text-align: center;
+}
+h1{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 60px;
+    font-family: cursive;
+}
+.top{
+    background-color: #8ad7c1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.cloud2{
+    position: absolute;
+}
+.cloud1{
+    position: absolute;
+    right: 300px ;
+    top: 50px;
+}
+.profile{
+    background-color: #f9e0ae;
+}
+hr{
+border-style: none;
+border-bottom-style:dotted;
+border-color: silver;
+border-width: 5px;
+width: 10%;
+}
+.skills{
+    background-color: #f2dcbb;
+}
+.contact-me{
+    background-color: #f2f4c0;
+}
