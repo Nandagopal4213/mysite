@@ -27,15 +27,8 @@
         <div class="nav_items">
           <ul>
             <li>
-              <a href="#signin" class="navbar__links" id="signup-page"
-                >Sign-in</a
-              >
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#signup" class="navbar__links" id="signup-page"
-                >Sign-up</a
+              <a href="index.html" class="navbar__links" id="signup-page"
+                >logout</a
               >
             </li>
           </ul>
@@ -46,63 +39,49 @@
     <!-- signin section -->
     <div class="container__1" id="signin">
       <div class="container__one">
-        <div class="box__1">
-          <form action="dashboard.html" class="form__inputs">
-            <label for="username" class="label__1">Username </label>
-            <input type="text" maxlength="50" name="username" />
-            <br />
-            <label for="password" class="label__1">Enter your password</label>
-            <input type="password" name="password" />
-            <br />
-            <button class="btn__1">Sign-in</button>
-          </form>
+        <div class="box__2">
+          input 1:<input
+            type="number"
+            maxlength="50"
+            id="input1"
+            name="input1"
+          />
+          <br />
+          input 2:<input
+            type="number"
+            maxlength="50"
+            id="input2"
+            name="input2"
+          />
+          <br />
+          input 3:<input
+            type="number"
+            maxlength="50"
+            id="input3"
+            name="input3"
+          />
+          <br />
+          <br />
+          <div class="btn_3">
+            <button onclick="mean()">Mean</button>
+
+            <button onclick="median()">Median</button>
+
+            <button onclick="mod()">Mod</button>
+          </div>
         </div>
       </div>
+      <center><h1 style="align-items: center" id="text"></h1></center>
     </div>
-    <!-- signup-section -->
-    <div class="container__two" id="signup">
-      <form action="action_page.php">
-        <div class="container">
-          <h1>Sign-up</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr />
-
-          <label for="email"><b>Email</b></label>
-          <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required
-          />
-<br>
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            id="psw"
-            required
-          />
-<br>
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input
-            type="password"
-            placeholder="Repeat Password"
-            name="psw-repeat"
-            id="psw-repeat"
-            required
-          />
-          <hr />
-<br>
-          <p></p>
-          <button type="submit" class="btn__1">Register</button>
-        </div>
-
-        <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
-      </form>
-    </div>
+    <script>
+      function mean() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var input3 = document.getElementById("input3").value;
+        var mean = (+input1 + +input2 + +input3) / 3;
+        var txt = document.getElementById("text");
+        txt.innerHTML = mean;
+      }
+    </script>
   </body>
 </html>
