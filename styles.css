@@ -69,9 +69,10 @@ li {
   display: inline-block;
   flex-direction: row;
   margin: 150px;
-  width: 70%;
+  width: 50%;
   background: #ff8177;
-  padding: 12px 20px;
+  padding-right: 100px;
+  text-align: right;
 }
 .label__1 {
   text-align: center;
@@ -85,6 +86,7 @@ li {
   height: 50px;
   margin: 0;
   cursor: pointer;
+  color: beige;
   border: none;
   border-radius: 5px;
 }
